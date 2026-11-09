@@ -17,11 +17,11 @@ function format(value: string | number): string {
 ## instanceof
 We use `instanceof` to check if something is made from a class.
 ```typescript
-function show(value: Error | string): string{
-    if(value instanceof Error){
-        return error.message;
+function show(value: Error | string): string {
+    if (value instanceof Error) {
+        return value.message;
     }
-    return error;
+    return value;
 }
 ```
 
